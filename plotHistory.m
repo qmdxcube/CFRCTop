@@ -9,10 +9,6 @@ ylabel('Compliance', 'FontSize', 12,'Color', color_left);
 ax = gca;
 ax.YAxis(1).Color = color_left;  
 ax.YAxis(1).FontSize = 10;
-cmax = max(compliance);
-nix = power(10,ceil(log10(cmax)));
-ymax = ceil(10*cmax/nix);
-yticks((0:0.2:1)*ymax);
 grid on;
 yyaxis right;
 plot(1:iter, volumefrac, color_right, 'LineWidth', 2, 'MarkerSize', 8);
@@ -25,4 +21,5 @@ yticks(0:0.2:1);
 xlabel('Optimization Step', 'FontSize', 12);
 legend('Compliance', 'Volume Fraction', 'Location', 'northeast');
 set(gca, 'FontSize', 10, 'Box', 'on');
+exportgraphics(gcf, 'MBB_history.png', 'Resolution', 1000);
 end

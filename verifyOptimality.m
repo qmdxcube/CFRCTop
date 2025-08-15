@@ -27,5 +27,10 @@ correlation = reshape(correlation,nely,nelx);
 correlation(xPhys<0.5)=0;
 figure;
 colormap(jet); imagesc(correlation); caxis([0 1]); axis equal; axis off; drawnow;
-colorbar('northoutside');
+cb = colorbar('north');
+axPos = get(gca, 'Position');
+cbPos = cb.Position;
+cbPos(2) = axPos(2) + axPos(4) - 0.16;
+set(cb, 'Position', cbPos);
+exportgraphics(gcf, 'MBB_correlation.png', 'Resolution', 3000);
 end
