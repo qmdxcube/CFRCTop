@@ -28,7 +28,7 @@ xPhys = zeros(nely,nelx);
 iter = 0;
 change = 1;
 loopbeta = 0;
-maxiter = 100;
+maxiter = 500;
 beta = 0;
 compliance = zeros(maxiter,1);
 volumefrac = zeros(maxiter,1);
@@ -57,7 +57,6 @@ while (change>0.01 && iter<maxiter)
     dvdxPhys = ones(nelm,1);
     dcdx = reshape(H*(dcdxPhys.*dx(:)./Hs),nely,nelx);
     dvdx = reshape(H*(dvdxPhys.*dx(:)./Hs),nely,nelx);
-    time_sa = time_sa+toc;
     %% DESIGN VARIABLE UPDATE
     [x,xPhys,change] = updateDensityVariables(x,dcdx,dvdx,H,Hs,beta,volfrac);
     %% PRINT RESULTS

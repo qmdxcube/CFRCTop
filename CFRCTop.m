@@ -149,5 +149,5 @@ verifyOptimality(nelx,nely,he,U,D,xPhys,pxPhys,pyPhys)
 %% VISUALIZATION OF THE OPTIMIZED DESIGN
 plotHistory(compliance,volumefrac)
 plotDesign(xPhys,pxPhys,pyPhys)
-save('results.mat','compliance','volumefrac','xPhys','pxPhys','pyPhys');
+save('CFRCTop_results.mat','compliance','volumefrac','xPhys','pxPhys','pyPhys');
 end
