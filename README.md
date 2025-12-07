@@ -22,7 +22,8 @@ Zhao J. CFRCTop: An Efficient MATLAB Implementation for Topology Optimization of
 <img width="4172" height="1454" alt="applsci-15-09242-g018" src="https://github.com/user-attachments/assets/bd68156a-4f02-4151-8606-40266a9c8f28" />
 
 6. Average computation time per iteration for the MBB problem with different resolutions and filter radii.
-   ![applsci-15-09242-g021-550](https://github.com/user-attachments/assets/51529db2-772b-4254-ab97-e00d5cee98ad)
+  <img width="2269" height="1864" alt="applsci-15-09242-g021" src="https://github.com/user-attachments/assets/5ba0ca4b-d0f3-42da-9bce-07faed7cfcdf" />
+
 
 8. Average computation time per iteration obtained with the updated version of the codes for the MBB problem with different resolutions and filter radii.
 <img width="2411" height="2009" alt="applsci-15-09242-g022" src="https://github.com/user-attachments/assets/9ddc0eb8-750c-419c-b3dd-4c5a31ae0ed4" />
